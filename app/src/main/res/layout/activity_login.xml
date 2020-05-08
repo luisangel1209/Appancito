@@ -7,6 +7,21 @@
     tools:context=".Login">
 
 
+    <TextView
+        android:id="@+id/TextOlviContra"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="698dp"
+        android:layout_marginEnd="89dp"
+        android:onClick="RecuperarContra"
+        android:text="@string/OlvidarContra"
+        android:textAlignment="center"
+        android:textColor="@color/Letras"
+        android:textSize="18sp" />
+
     <RelativeLayout
         android:id="@+id/Conte"
         android:layout_width="match_parent"
@@ -14,19 +29,119 @@
         android:background="@color/ColorFondo">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:layout_marginStart="128dp"
-            android:layout_marginEnd="142dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="157dp"
             android:text="@string/Login"
-            android:textSize="30sp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"></TextView>
+            android:textSize="30sp"></TextView>
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="554dp"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/textUsuario"
+        android:layout_width="93dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="477dp"
+        android:text="@string/Usuario"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="322dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="408dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="346dp"
+        android:text="@string/Contra"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextContra"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="461dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="273dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/TextRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="657dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="88dp"
+        android:clickable="false"
+        android:onClick="Registro"
+        android:text="@string/Registrarse"
+        android:textAlignment="center"
+        android:textColor="@color/Letras"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/BotonEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="545dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="253dp"
+        android:backgroundTint="@color/ColorFondo"
+        android:text="@string/Entrar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Principal"
+        android:text="Button" />
 
 </RelativeLayout>
 
