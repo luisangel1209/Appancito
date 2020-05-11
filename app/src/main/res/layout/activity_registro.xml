@@ -147,18 +147,17 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/BotonRegistrarse"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_alignParen1tStart="true"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="685dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="87dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="686dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="95dp"
         android:backgroundTint="@color/ColorFondo"
         android:text="@string/Registrarse" />
 

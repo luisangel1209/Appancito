@@ -121,6 +121,7 @@
         android:textColor="@color/Letras"
         android:textSize="18sp" />
 
+
     <Button
         android:id="@+id/BotonEntrar"
         android:layout_width="wrap_content"
@@ -129,10 +130,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="545dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="253dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="221dp"
         android:backgroundTint="@color/ColorFondo"
         android:text="@string/Entrar" />
 
