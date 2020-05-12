@@ -21,4 +21,13 @@
     <string name="Ayuda">Ayuda</string>
     <string name="RealizarPP">Realizar Pedido "Pequeño"</string>
     <string name="RealizarPG">Realizar Pedido "Grande"</string>
+    <string name="AyudaIngresar">Te ayuda a ingresar al inicio</string>
+    <string name="ConfirmarPedido">Confirmas tu pedido</string>
+    <string name="SolicitarPedido">Solicitas un pedido</string>
+    <string name="DatosEntrega">Agregas los datos de entrega</string>
+    <string name="MedioPago">Apartado donde encontraras el medio de pago</string>
+    <string name="Clave">Aqui encontraras la clave interbancaria a la cual vas a depositar</string>
+    <string name="SubirFoto">Apartado donde subirás la foto donde se muestre que ha realizado el deposito</string>
+    <string name="Ubicacion">Muestra una imagen donde se encuentra ubicada nuestra panaderia</string>
+    <string name="AyudaPanadero">Te ayudare a poder navegar por la aplicación</string>
 </resources>
