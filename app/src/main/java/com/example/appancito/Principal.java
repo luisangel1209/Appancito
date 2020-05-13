@@ -2,7 +2,9 @@ package com.example.appancito;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Principal extends AppCompatActivity {
 
@@ -11,4 +13,18 @@ public class Principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
     }
+
+    public void Ayuda(View view){
+        Intent ayuda = new Intent(Principal.this, Ayuda.class);
+        startActivity(ayuda);
+    }
+    public void Contacto(View view){
+        Intent contacto = new Intent(Principal.this, Ayuda.class);
+        startActivity(contacto);
+    }
+    public void Pedidos(View view){
+        Intent pedidos = new Intent(Principal.this, Ayuda.class);
+        startActivity(pedidos);
+    }
 }
+
