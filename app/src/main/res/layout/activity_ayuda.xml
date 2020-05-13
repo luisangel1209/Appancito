@@ -43,18 +43,6 @@
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="185dp"
-        android:layout_height="216dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119"
-        app:srcCompat="@mipmap/panadero_foreground" />
-
-    <ImageView
         android:id="@+id/imageView10"
         android:layout_width="87dp"
         android:layout_height="77dp"
@@ -64,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.202"
-        app:srcCompat="@mipmap/" />
+        app:srcCompat="@mipmap/home_foreground" />
 
     <TextView
         android:id="@+id/textView10"
@@ -88,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.313"
-        app:srcCompat="@mipmap/" />
+        app:srcCompat="@mipmap/confirmar_foreground" />
 
     <TextView
         android:id="@+id/textView11"
@@ -112,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.449"
-        app:srcCompat="@mipmap/" />
+        tools:srcCompat="@mipmap/datosentrega_foreground" />
 
     <TextView
         android:id="@+id/textView12"
@@ -148,5 +136,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.563" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="184dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@mipmap/panaderoo_foreground" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
