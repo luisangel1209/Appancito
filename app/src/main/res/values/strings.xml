@@ -30,4 +30,9 @@
     <string name="SubirFoto">Apartado donde subirás la foto donde se muestre que ha realizado el deposito</string>
     <string name="Ubicacion">Muestra una imagen donde se encuentra ubicada nuestra panaderia</string>
     <string name="AyudaPanadero">Te ayudare a poder navegar por la aplicación</string>
+    <string name="FormaPago">Forma de Pago</string>
+    <string name="UstedPaga">Usted Paga: </string>
+    <string name="clave">Clave hacer la transferencia</string>
+    <string name="cuenta">xxxxxxxxxxxxxxx</string>
+    <string name="adjuntarFoto">Adjuntar imagen del deposito</string>
 </resources>
