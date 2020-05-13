@@ -35,4 +35,8 @@
     <string name="clave">Clave hacer la transferencia</string>
     <string name="cuenta">xxxxxxxxxxxxxxx</string>
     <string name="adjuntarFoto">Adjuntar imagen del deposito</string>
+    <string name="Datosentrega">Datos de Entrega</string>
+    <string name="FechaEntrega">Fecha de Entrega</string>
+    <string name="HoraEntrega">Hora de Entrega</string>
+    <string name="Continuar">Continuar</string>
 </resources>

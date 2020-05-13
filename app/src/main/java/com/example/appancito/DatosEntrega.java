@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class FormaPago extends AppCompatActivity {
+public class DatosEntrega extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forma_pago);
+        setContentView(R.layout.activity_datos_entrega);
     }
 
     public void Regresar(View view){
-        Intent regresar = new Intent(FormaPago.this, DatosEntrega.class);
+        Intent regresar = new Intent(DatosEntrega.this, DatosEntrega.class);
         startActivity(regresar);
     }
 }
