@@ -127,15 +127,15 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="299dp"
+        android:layout_height="22dp"
         android:text="@string/MedioPago"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.563" />
+        app:layout_constraintVertical_bias="0.564" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -162,14 +162,62 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="306dp"
-        android:layout_height="16dp"
+        android:layout_width="281dp"
+        android:layout_height="40dp"
         android:text="@string/Clave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678" />
+        app:layout_constraintVertical_bias="0.689" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="89dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836"
+        app:srcCompat="@mipmap/adjuntar_foreground" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="258dp"
+        android:layout_height="58dp"
+        android:text="@string/SubirFoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="94dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953"
+        app:srcCompat="@mipmap/mapa_foreground" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="260dp"
+        android:layout_height="57dp"
+        android:text="@string/Ubicacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
