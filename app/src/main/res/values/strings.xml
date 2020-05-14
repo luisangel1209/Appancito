@@ -39,4 +39,11 @@
     <string name="FechaEntrega">Fecha de Entrega</string>
     <string name="HoraEntrega">Hora de Entrega</string>
     <string name="Continuar">Continuar</string>
+    <string name="ConfirmatuPedido">Confirmar pedido</string>
+    <string name="btnConfirmar">Confirmar</string>
+    <string name="SolicitarP">Solicitar Pedido</string>
+    <string name="PedidoPequenio">Pedido Pequeño</string>
+    <string name="Pedidos">Pedidos</string>
+    <string name="Mas">+</string>
+    <string name="Menos">-</string>
 </resources>

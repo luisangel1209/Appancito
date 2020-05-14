@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DatosEntrega"></activity>
+        <activity android:name=".VerPedidos"></activity>
+        <activity android:name=".PedidoPequenio" />
+        <activity android:name=".ConfirmarPedido" />
+        <activity android:name=".SolicitarPedido" />
+        <activity android:name=".DatosEntrega" />
         <activity android:name=".FormaPago" />
         <activity
             android:name=".Ayuda"
