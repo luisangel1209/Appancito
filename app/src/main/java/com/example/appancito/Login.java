@@ -26,5 +26,16 @@ public class Login extends AppCompatActivity {
         Intent principal = new Intent(Login.this, Principal.class);
         startActivity(principal);
     }
-
+    public void ayuda(View view){
+        Intent principal = new Intent(Login.this, Ayuda.class);
+        startActivity(principal);
+    }
+    public void Datos(View view){
+        Intent principal = new Intent(Login.this, DatosEntrega.class);
+        startActivity(principal);
+    }
+    public void forma(View view){
+        Intent principal = new Intent(Login.this, FormaPago.class);
+        startActivity(principal);
+    }
 }
