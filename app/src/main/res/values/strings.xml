@@ -46,4 +46,8 @@
     <string name="Pedidos">Pedidos</string>
     <string name="Mas">+</string>
     <string name="Menos">-</string>
+    <string name="Facebook">Appancito Panaderia</string>
+    <string name="Correo">Appancito@gmail.com</string>
+    <string name="NumTelefono">01 800 9283 8280</string>
+    <string name="UbicacionLocal">Calle ... Num ... Delegacion ...</string>
 </resources>
