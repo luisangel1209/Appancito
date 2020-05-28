@@ -7,24 +7,6 @@
     tools:context=".Login">
 
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="323dp"
-        android:layout_marginBottom="631dp"
-        android:onClick="forma"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="Principal"
-        android:text="Button" />
-
     <TextView
         android:id="@+id/TextOlviContra"
         android:layout_width="214dp"
@@ -70,13 +52,13 @@
 
     <TextView
         android:id="@+id/textUsuario"
-        android:layout_width="93dp"
-        android:layout_height="50dp"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="134dp"
+        android:layout_marginStart="109dp"
         android:layout_marginTop="263dp"
-        android:layout_marginEnd="133dp"
+        android:layout_marginEnd="108dp"
         android:layout_marginBottom="477dp"
         android:text="@string/Usuario"
         android:textAlignment="center"
@@ -85,7 +67,7 @@
     <EditText
         android:id="@+id/editTextUsuario"
         android:layout_width="154dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="103dp"
@@ -154,28 +136,6 @@
         android:layout_marginBottom="221dp"
         android:backgroundTint="@color/ColorFondo"
         android:text="@string/Entrar" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="323dp"
-        android:layout_marginBottom="695dp"
-        android:onClick="Datos"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="323dp"
-        android:layout_marginBottom="747dp"
-        android:onClick="ayuda"
-        android:text="Button" />
 
 </RelativeLayout>
 

@@ -63,7 +63,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextNumero"
+        android:id="@+id/editTextNombre"
         android:layout_width="154dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -136,7 +136,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextTelefono"
+        android:id="@+id/editTextCorreo"
         android:layout_width="154dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -144,7 +144,7 @@
         android:layout_marginStart="103dp"
         android:layout_marginTop="610dp"
         android:layout_marginEnd="103dp"
-        android:inputType="number" />
+        android:inputType="text" />
 
     <Button
         android:id="@+id/BotonRegistrarse"

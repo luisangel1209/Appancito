@@ -3,7 +3,7 @@
     <string name="Bienvenido">Bienvenido</string>
     <string name="Elmejor">El mejor pan tradicional</string>
     <string name="Login">Login</string>
-    <string name="Usuario">Usuario</string>
+    <string name="Usuario">Correo</string>
     <string name="Contra">Contraseña</string>
     <string name="Registrarse">Registrarse</string>
     <string name="OlvidarContra">¿Olvidaste la contraseña?</string>
@@ -11,10 +11,10 @@
     <string name="Registro">Registro</string>
     <string name="Nombre">Nombre</string>
     <string name="Apellido">Apellido</string>
-    <string name="Telefono">Telefono</string>
+    <string name="Telefono">Correo</string>
     <string name="Contraseña">Contraseña</string>
     <string name="RecuperarContra">Recuperar Contraseña</string>
-    <string name="NumeroTele">Ingresa tu número de teléfono</string>
+    <string name="NumeroTele">Ingresa tu correo electronico</string>
     <string name="Enviar">Enviar</string>
     <string name="Verpedidos">Ver Pedidos</string>
     <string name="Contacto">Contacto</string>
