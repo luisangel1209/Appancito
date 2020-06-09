@@ -62,7 +62,7 @@ public class Registro extends AppCompatActivity {
                     if(contraseña.length() >= 6){
                         registrarusuario();
                     }else{
-                        Toast.makeText(Registro.this, "La contraseña debe contener al menos 6 carasteres", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Registro.this, "La contraseña debe contener al menos 6 caracteres", Toast.LENGTH_LONG).show();
                     }
                 }else{
                     Toast.makeText(Registro.this, "Debes completar todos los campos", Toast.LENGTH_LONG).show();
@@ -77,7 +77,7 @@ public class Registro extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Map<String, Object> map = new HashMap<>();
+                    Map<String, Object> map = new HashMap<>(); //Mapa de valores
                     String nombreCom = ""+nombre +" "+apellido;
                     map.put("Nombre", nombreCom);
                     map.put("Contraseña", contraseña);
