@@ -16,6 +16,7 @@
     <string name="RecuperarContra">Recuperar Contraseña</string>
     <string name="NumeroTele">Ingresa tu correo electronico</string>
     <string name="Enviar">Enviar</string>
+    <string name="Principal">Principal</string>
     <string name="Verpedidos">Ver Pedidos</string>
     <string name="Contacto">Contacto</string>
     <string name="Ayuda">Ayuda</string>
@@ -50,4 +51,5 @@
     <string name="Correo">Appancito@gmail.com</string>
     <string name="NumTelefono">01 800 9283 8280</string>
     <string name="UbicacionLocal">Lorenzo Boturini 269, Cuauhtemoc, 06820 Ciudad de Mexico</string>
+    <string name="cerrarsesion">Presiona el icono para cerrar sesion</string>
 </resources>

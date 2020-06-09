@@ -11,6 +11,7 @@
         android:layout_width="115dp"
         android:layout_height="39dp"
         android:backgroundTint="@color/ColorFondo"
+        android:onClick="DE"
         android:text="@string/btnConfirmar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

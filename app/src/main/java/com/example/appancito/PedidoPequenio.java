@@ -15,8 +15,13 @@ public class PedidoPequenio extends AppCompatActivity {
     }
 
     public void Regresar(View view){
-        Intent regresar = new Intent(PedidoPequenio.this, Login.class);
+        Intent regresar = new Intent(PedidoPequenio.this, Principal.class);
         startActivity(regresar);
+    }
+
+    public void Confirmar(View view){
+        Intent confir = new Intent(PedidoPequenio.this, ConfirmarPedido.class);
+        startActivity(confir);
     }
 
 }

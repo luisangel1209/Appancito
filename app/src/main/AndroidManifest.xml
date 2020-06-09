@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Contacto"></activity>
-        <activity android:name=".VerPedidos" />
-        <activity android:name=".PedidoPequenio" />
-        <activity android:name=".ConfirmarPedido" />
-        <activity android:name=".SolicitarPedido" />
-        <activity android:name=".DatosEntrega" />
-        <activity android:name=".FormaPago" />
+        <activity android:name=".Contacto" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".VerPedidos" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".PedidoPequenio" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ConfirmarPedido" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".SolicitarPedido" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".DatosEntrega" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".FormaPago" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Ayuda"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

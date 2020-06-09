@@ -108,6 +108,7 @@
         android:layout_width="128dp"
         android:layout_height="65dp"
         android:backgroundTint="@color/ColorFondo"
+        android:onClick="FormaPago"
         android:text="@string/Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

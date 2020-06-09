@@ -19,4 +19,9 @@ public class ConfirmarPedido extends AppCompatActivity {
         startActivity(regresar);
     }
 
+    public void DE(View view){
+        Intent datose = new Intent(ConfirmarPedido.this, ConfirmarPedido.class);
+        startActivity(datose);
+    }
+
 }

@@ -5,27 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Principal">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/ColorFondo"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-
-    <ImageView
-        android:id="@+id/cerrarsesion"
-        android:layout_width="65dp"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="347dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="772dp"
-        android:elevation="@android:dimen/app_icon_size"
-        app:srcCompat="@mipmap/cerrarsesion" />
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/Principal"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
         android:layout_height="189dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="597dp"
         android:adjustViewBounds="false"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -157,11 +173,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="267dp"
         android:layout_marginEnd="102dp"
-        android:layout_marginBottom="390dp"
+        android:layout_marginBottom="379dp"
         android:background="@mipmap/realizapp_foreground"
-        android:elevation="10dp" />
+        android:elevation="10dp"
+        android:onClick="PP" />
 
     <Button
         android:id="@+id/RealizarPG"
@@ -172,11 +189,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="471dp"
+        android:layout_marginTop="484dp"
         android:layout_marginEnd="102dp"
-        android:layout_marginBottom="175dp"
+        android:layout_marginBottom="163dp"
         android:background="@mipmap/realizapg_foreground"
-        android:elevation="10dp" />
+        android:elevation="10dp"
+        android:onClick="PG" />
 
     <TextView
         android:id="@+id/textView8"
@@ -187,9 +205,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="416dp"
+        android:layout_marginTop="429dp"
         android:layout_marginEnd="97dp"
-        android:layout_marginBottom="383dp"
+        android:layout_marginBottom="370dp"
         android:text="@string/RealizarPP"
         android:textAlignment="center"
         android:textSize="18sp" />
@@ -203,9 +221,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="630dp"
+        android:layout_marginTop="643dp"
         android:layout_marginEnd="97dp"
-        android:layout_marginBottom="169dp"
+        android:layout_marginBottom="156dp"
         android:text="@string/RealizarPG"
         android:textAlignment="center"
         android:textSize="18sp" />

@@ -18,4 +18,9 @@ public class SolicitarPedido extends AppCompatActivity {
         Intent regresar = new Intent(SolicitarPedido.this, Login.class);
         startActivity(regresar);
     }
+
+    public void DE(View view){
+        Intent datose = new Intent(SolicitarPedido.this, ConfirmarPedido.class);
+        startActivity(datose);
+    }
 }

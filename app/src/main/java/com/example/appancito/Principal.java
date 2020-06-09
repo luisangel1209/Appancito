@@ -13,23 +13,20 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Principal extends AppCompatActivity {
 
-    private ImageView cerrarsesion;
-    private FirebaseAuth Auth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-        cerrarsesion = (ImageView) findViewById(R.id.cerrarsesion);
-        Auth = FirebaseAuth.getInstance();
-        cerrarsesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Auth.signOut();
-                startActivity(new Intent(Principal.this, Login.class));
-                finish();
-            }
-        });
+    }
+
+    public void PP(View view){
+        Intent pp = new Intent(Principal.this, PedidoPequenio.class);
+        startActivity(pp);
+    }
+
+    public void PG(View view){
+        Intent pg = new Intent(Principal.this, SolicitarPedido.class);
+        startActivity(pg);
     }
 
     public void Ayuda(View view){
@@ -37,11 +34,11 @@ public class Principal extends AppCompatActivity {
         startActivity(ayuda);
     }
     public void Contacto(View view){
-        Intent contacto = new Intent(Principal.this, Ayuda.class);
+        Intent contacto = new Intent(Principal.this, Contacto.class);
         startActivity(contacto);
     }
     public void Pedidos(View view){
-        Intent pedidos = new Intent(Principal.this, Ayuda.class);
+        Intent pedidos = new Intent(Principal.this, VerPedidos.class);
         startActivity(pedidos);
     }
 }

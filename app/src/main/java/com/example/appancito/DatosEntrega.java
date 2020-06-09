@@ -18,4 +18,9 @@ public class DatosEntrega extends AppCompatActivity {
         Intent regresar = new Intent(DatosEntrega.this, DatosEntrega.class);
         startActivity(regresar);
     }
+
+    public void FormaPago(View view){
+        Intent formapago = new Intent(DatosEntrega.this, FormaPago.class);
+        startActivity(formapago);
+    }
 }
