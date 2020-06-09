@@ -20,7 +20,7 @@ public class ConfirmarPedido extends AppCompatActivity {
     }
 
     public void DE(View view){
-        Intent datose = new Intent(ConfirmarPedido.this, ConfirmarPedido.class);
+        Intent datose = new Intent(ConfirmarPedido.this, DatosEntrega.class);
         startActivity(datose);
     }
 

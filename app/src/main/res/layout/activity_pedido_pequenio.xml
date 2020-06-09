@@ -45,24 +45,26 @@
 
     <TextView
         android:id="@+id/textView45"
-        android:layout_width="54dp"
-        android:layout_height="37dp"
+        android:layout_width="81dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.264"
+        tools:text="0" />
 
     <TextView
         android:id="@+id/textView46"
-        android:layout_width="54dp"
-        android:layout_height="37dp"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
 
     <ImageView
         android:id="@+id/imageView26"
@@ -89,14 +91,14 @@
 
     <TextView
         android:id="@+id/textView47"
-        android:layout_width="54dp"
-        android:layout_height="37dp"
+        android:layout_width="89dp"
+        android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
+        app:layout_constraintVertical_bias="0.749"
+        tools:text="0" />
 
     <TextView
         android:id="@+id/textView50"

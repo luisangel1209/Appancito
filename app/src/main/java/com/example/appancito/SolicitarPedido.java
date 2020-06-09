@@ -15,7 +15,7 @@ public class SolicitarPedido extends AppCompatActivity {
     }
 
     public void Regresar(View view){
-        Intent regresar = new Intent(SolicitarPedido.this, Login.class);
+        Intent regresar = new Intent(SolicitarPedido.this, Principal.class);
         startActivity(regresar);
     }
 

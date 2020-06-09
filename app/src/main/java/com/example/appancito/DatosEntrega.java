@@ -15,7 +15,7 @@ public class DatosEntrega extends AppCompatActivity {
     }
 
     public void Regresar(View view){
-        Intent regresar = new Intent(DatosEntrega.this, DatosEntrega.class);
+        Intent regresar = new Intent(DatosEntrega.this, ConfirmarPedido.class);
         startActivity(regresar);
     }
 
