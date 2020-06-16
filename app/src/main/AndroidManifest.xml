@@ -23,11 +23,6 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity
-            android:name=".Contacto2"
-            android:label="@string/title_activity_contacto2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            ></activity>
 
         <activity
             android:name=".Contacto"
