@@ -20,8 +20,8 @@
     <string name="Verpedidos">Ver Pedidos</string>
     <string name="Contacto">Contacto</string>
     <string name="Ayuda">Ayuda</string>
-    <string name="RealizarPP">Realizar Pedido "Pequeño"</string>
-    <string name="RealizarPG">Realizar Pedido "Grande"</string>
+    <string name="RealizarPP">Realizar Pedido Para Hoy</string>
+    <string name="RealizarPG">Realizar Pedido </string>
     <string name="AyudaIngresar">Te ayuda a ingresar al inicio</string>
     <string name="ConfirmarPedido">Confirmas tu pedido</string>
     <string name="SolicitarPedido">Solicitas un pedido</string>
@@ -43,7 +43,7 @@
     <string name="ConfirmatuPedido">Confirmar pedido</string>
     <string name="btnConfirmar">Confirmar</string>
     <string name="SolicitarP">Solicitar mi Pedido</string>
-    <string name="PedidoPequenio">Pedido Pequeño</string>
+    <string name="PedidoPequenio">Pedido Para Hoy</string>
     <string name="Pedidos">Pedidos</string>
     <string name="Mas">+</string>
     <string name="Menos">-</string>
@@ -52,4 +52,5 @@
     <string name="NumTelefono">01 800 9283 8280</string>
     <string name="UbicacionLocal">Lorenzo Boturini 269, Cuauhtemoc, 06820 Ciudad de Mexico</string>
     <string name="cerrarsesion">Presiona el icono para cerrar sesion</string>
+    <string name="title_activity_contacto2">Map</string>
 </resources>
