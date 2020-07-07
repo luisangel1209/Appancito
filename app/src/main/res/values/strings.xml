@@ -53,4 +53,7 @@
     <string name="UbicacionLocal">Lorenzo Boturini 269, Cuauhtemoc, 06820 Ciudad de Mexico</string>
     <string name="cerrarsesion">Presiona el icono para cerrar sesion</string>
     <string name="title_activity_contacto2">Map</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="mapa">Ir al Mapa</string>
+    <string name="action_settings">Settings</string>
 </resources>

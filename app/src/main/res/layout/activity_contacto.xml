@@ -19,7 +19,7 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
+            android:layout_width="62dp"
             android:layout_height="match_parent"
             android:contentDescription="TODO"
             android:onClick="Regresar"
@@ -37,7 +37,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="47dp"
             android:layout_marginBottom="13dp"
-            android:text="@string/SolicitarP"
+            android:text="@string/Contacto"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -139,31 +139,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.894" />
 
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="327dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="640dp"
+    <Button
+        android:layout_width="186dp"
+        android:layout_height="59dp"
+        android:background="@color/ColorFondo"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:onClick="Mapa"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:context=".Contacto" />
-    <!--
-    map:mapType="0" Specifies a change to the initial map type
-    map:zOrderOnTop="true"  Control whether the map view's surface is placed on top of its window
-    map:useVieLifecycle="true" When using a MapFragment, this flag specifies whether the lifecycle of the map should be tied to the fragment's view or the fragment itself
-    map:uiCompass="true" Enables or disables the compass
-    map:uiRotateGestures="true" Sets the preference for whether rotate gestures should be enabled or disabled
-    map:uiScrollGestures="true" Sets the preference for whether scroll gestures should be enabled or disabled
-    map:uiTiltGestures="true" Sets the preference for whether tilt gestures should be enabled or disabled
-    map:uiZoomGestures="true" Sets the preference for whether zoom gestures should be enabled or disabled
-    map:uiZoomControls="true" Enables or disables the zoom controls
-    map:liteMode="true" Specifies whether the map should be created in lite mode
-    map:uiMapToolbar="true" Specifies whether the mapToolbar should be enabled
-    map:ambientEnabled="true" Specifies whether ambient-mode styling should be enabled
-    map:cameraMinZoomPreference="0.0" Specifies a preferred lower bound for camera zoom
-    map:cameraMaxZoomPreference="1.0" Specifies a preferred upper bound for camera zoom -->
-    />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165"
+        tools:text="@string/mapa" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

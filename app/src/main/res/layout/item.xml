@@ -36,7 +36,8 @@
                 android:textSize="12sp"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
