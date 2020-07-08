@@ -37,7 +37,7 @@
     <string name="cuenta">xxxxxxxxxxxxxxx</string>
     <string name="adjuntarFoto">Adjuntar imagen del deposito</string>
     <string name="Datosentrega">Datos de Entrega</string>
-    <string name="FechaEntrega">Fecha de Entrega</string>
+    <string name="FechaEntrega">Presiona el boton para seleccionar una fecha de entrega</string>
     <string name="HoraEntrega">Hora de Entrega</string>
     <string name="Continuar">Continuar</string>
     <string name="ConfirmatuPedido">Confirmar pedido</string>
@@ -55,5 +55,8 @@
     <string name="title_activity_contacto2">Map</string>
     <string name="title_activity_mapa">Map</string>
     <string name="mapa">Ir al Mapa</string>
-    <string name="action_settings">Settings</string>
+    <string name="fecha">Fecha</string>
+    <string name="Guardar">Guardar Imagen</string>
+    <string name="subir">Subir Imagen</string>
+    <string name="seim">Seleccionar Imagen</string>
 </resources>

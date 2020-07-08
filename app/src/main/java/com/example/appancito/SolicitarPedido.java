@@ -32,6 +32,11 @@ public class SolicitarPedido extends AppCompatActivity implements RecyclerAdapte
         startActivity(regresar);
     }
 
+    public void Confi(View view){
+        Intent de = new Intent(SolicitarPedido.this, ConfirmarPedido2.class);
+        startActivity(de);
+    }
+
     private void initViews(){
         rvLista = findViewById(R.id.rvLista);
     }

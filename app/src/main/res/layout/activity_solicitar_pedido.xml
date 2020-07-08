@@ -60,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:background="@color/ColorFondo"
+        android:onClick="Confi"
         android:text="@string/Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

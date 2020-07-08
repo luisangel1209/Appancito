@@ -23,4 +23,8 @@ public class FormaPago extends AppCompatActivity {
         Intent home = new Intent(FormaPago.this, Principal.class);
         startActivity(home);
     }
+    public void Imagen(View view){
+        Intent imagen = new Intent(FormaPago.this, SubirImagen.class);
+        startActivity(imagen);
+    }
 }

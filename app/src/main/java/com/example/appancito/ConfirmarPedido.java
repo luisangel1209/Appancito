@@ -9,62 +9,54 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
+import android.widget.TextView;
+
+import com.example.appancito.Model.ItemList;
 
 import java.util.ArrayList;
 
 public class ConfirmarPedido extends AppCompatActivity {
+    private ImageView imgItemDetail;
+    private TextView numero;
+    private TextView tvDescripcionDetail;
+    private ItemList itemDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmar_pedido);
+        numero = (TextView)findViewById(R.id.textnum);
+        Bundle bundle = getIntent().getExtras();
 
-        Tabla tabla = new Tabla(this, (TableLayout)findViewById(R.id.tabla));
-        tabla.agregarCabecera(R.array.cabecera_tabla);
-        for(int i = 0; i < 15; i++)
-        {
-            ArrayList<String> elementos = new ArrayList<String>();
-            elementos.add(Integer.toString(i));
-            elementos.add("Casilla [" + i + ", 0]");
-            elementos.add("Casilla [" + i + ", 1]");
-            elementos.add("Casilla [" + i + ", 2]");
-            elementos.add("Casilla [" + i + ", 3]");
-            tabla.agregarFilaTabla(elementos);
-        }
+        String dato = bundle.getString("Numero").toString();
+        numero.setText(dato);
     }
+
+    /*private void initViews() {
+        imgItemDetail = findViewById(R.id.imgItemDetail);
+        tvTituloDetail = findViewById(R.id.tvTituloDetail);
+        tvDescripcionDetail = findViewById(R.id.tvDescripcionDetail);
+    }
+
+    private void initValues(){
+        itemDetail = (ItemList) getIntent().getExtras().getSerializable("itemDetail");
+
+        imgItemDetail.setImageResource(itemDetail.getImgResource());
+        tvTituloDetail.setText(itemDetail.getTitulo());
+        tvDescripcionDetail.setText(itemDetail.getDescripcion());
+    }*/
 
     public void Regresar(View view){
         Intent regresar = new Intent(ConfirmarPedido.this, SolicitarPedido.class);
         startActivity(regresar);
     }
 
-    public void DE(View view){
-        Intent datose = new Intent(ConfirmarPedido.this, DatosEntrega.class);
-        startActivity(datose);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.principal, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings)
-        {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+    public void Datosentrega(View view){
+        Intent de = new Intent(ConfirmarPedido.this, DatosEntrega.class);
+        startActivity(de);
     }
 
 }

@@ -24,4 +24,5 @@ public class ItemList implements Serializable {
     public int getImgResource() {
         return imgResource;
     }
+
 }
