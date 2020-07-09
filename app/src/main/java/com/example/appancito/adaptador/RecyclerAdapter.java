@@ -60,9 +60,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             imgItem = itemView.findViewById(R.id.imgItem);
             tvTitulo = itemView.findViewById(R.id.tvTitulo);
             tvDescripcion = itemView.findViewById(R.id.tvDescripcion);
-            tvDispo = itemView.findViewById(R.id.tvDispo);
+            //tvDispo = itemView.findViewById(R.id.tvDispo);
 
-            linLay = itemView.findViewById(R.id.linLay);
+            //linLay = itemView.findViewById(R.id.linLay);
 
         }
     }

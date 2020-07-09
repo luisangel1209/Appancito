@@ -43,22 +43,198 @@
 
     </RelativeLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvLista"
-        android:layout_width="372dp"
-        android:layout_height="585dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <ImageView
+        android:id="@+id/imgbolillo"
+        android:layout_width="147dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Conte"
-        app:layout_constraintVertical_bias="0.144" />
+        app:srcCompat="@drawable/bolillo" />
+
+    <TextView
+        android:id="@+id/TituloBoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/bolillo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/imgbolillo"
+        app:layout_constraintTop_toBottomOf="@+id/Conte" />
+
+    <ListView
+        android:id="@+id/listabolillo"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgbolillo"
+        app:layout_constraintTop_toBottomOf="@+id/Conte" />
+
+    <EditText
+        android:id="@+id/editTextBolillo"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgbolillo"
+        app:layout_constraintTop_toBottomOf="@+id/listabolillo" />
+
+
+
+    <ImageView
+        android:id="@+id/imgconcha"
+        android:layout_width="147dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbolillo"
+        app:srcCompat="@drawable/concha" />
+
+    <TextView
+        android:id="@+id/TituloConcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/conchas"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toEndOf="@+id/imgconcha"
+        app:layout_constraintTop_toBottomOf="@+id/imgbolillo" />
+
+    <ListView
+        android:id="@+id/listaconcha"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgconcha"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBolillo" />
+
+    <EditText
+        android:id="@+id/editTextConcha"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgconcha"
+        app:layout_constraintTop_toBottomOf="@+id/listaconcha" />
+
+
+
+    <ImageView
+        android:id="@+id/imgcuernos"
+        android:layout_width="147dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgconcha"
+        app:srcCompat="@drawable/cuernitos" />
+
+    <TextView
+        android:id="@+id/TituloCuernito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/cuernos"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/imgcuernos"
+        app:layout_constraintTop_toBottomOf="@+id/imgconcha" />
+
+    <ListView
+        android:id="@+id/listacuernos"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgcuernos"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConcha" />
+
+    <EditText
+        android:id="@+id/editTextCuernos"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgcuernos"
+        app:layout_constraintTop_toBottomOf="@+id/listacuernos" />
+
+
+
+    <ImageView
+        android:id="@+id/imgorejas"
+        android:layout_width="147dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcuernos"
+        app:srcCompat="@drawable/orejas" />
+
+    <TextView
+        android:id="@+id/TituloOreja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/orejas"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/imgorejas"
+        app:layout_constraintTop_toBottomOf="@+id/imgcuernos" />
+
+    <ListView
+        android:id="@+id/listaorejas"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgorejas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCuernos" />
+
+    <EditText
+        android:id="@+id/editTextOrejas"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/imgorejas"
+        app:layout_constraintTop_toBottomOf="@+id/listaorejas" />
 
     <Button
         android:id="@+id/buttonpg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:layout_marginBottom="48dp"
         android:background="@color/ColorFondo"
         android:onClick="Confi"
         android:text="@string/Continuar"
@@ -66,7 +242,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvLista"
+        app:layout_constraintTop_toBottomOf="@+id/imgorejas"
         app:layout_constraintVertical_bias="0.062" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
