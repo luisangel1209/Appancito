@@ -59,4 +59,10 @@
     <string name="Guardar">Guardar Imagen</string>
     <string name="subir">Subir Imagen</string>
     <string name="seim">Seleccionar Imagen</string>
+    <string name="bolillo">Bolillo</string>
+    <string name="conchas">Conchas</string>
+    <string name="cuernos">Cuernos</string>
+    <string name="orejas">Orejas</string>
+
+
 </resources>

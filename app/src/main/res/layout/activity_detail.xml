@@ -31,7 +31,7 @@
         app:layout_constraintLeft_toLeftOf="parent"/>
 
     <EditText
-        android:id="@+id/editnumero"
+        android:id="@+id/etCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"

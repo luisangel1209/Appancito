@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.appancito.Model.ItemList;
 
@@ -30,7 +31,7 @@ public class ConfirmarPedido extends AppCompatActivity {
         setContentView(R.layout.activity_confirmar_pedido);
         numero = (TextView)findViewById(R.id.textnum);
         Bundle bundle = getIntent().getExtras();
-
+        
         String dato = bundle.getString("Numero").toString();
         numero.setText(dato);
     }

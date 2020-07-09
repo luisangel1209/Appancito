@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "330231962772",
+    "firebase_url": "https://appancito-a41fe.firebaseio.com",
+    "project_id": "appancito-a41fe",
+    "storage_bucket": "appancito-a41fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330231962772:android:e23c1b33cbf3a796682881",
+        "android_client_info": {
+          "package_name": "com.example.appancito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330231962772-4m6n7f5sj25fgqd7d6o4saec4ehspg11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appancito",
+            "certificate_hash": "1516de4bc918eb088ea41a7557c3db756fdcce97"
+          }
+        },
+        {
+          "client_id": "330231962772-c0t8srit241t94f479r0o7obqk5d9gn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3lnfJftdrpwdG0W7hD64VXiI3Gctp0HE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330231962772-c0t8srit241t94f479r0o7obqk5d9gn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

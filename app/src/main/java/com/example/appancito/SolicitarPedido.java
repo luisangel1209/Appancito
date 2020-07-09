@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import com.example.appancito.Model.ItemList;
 import com.example.appancito.adaptador.RecyclerAdapter;
@@ -14,7 +15,7 @@ import com.example.appancito.adaptador.RecyclerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SolicitarPedido extends AppCompatActivity implements RecyclerAdapter.RecyclerItemClick {
+public class SolicitarPedido extends AppCompatActivity  {
     private RecyclerView rvLista;
     private RecyclerAdapter adapter;
     private List<ItemList> items;
@@ -33,6 +34,8 @@ public class SolicitarPedido extends AppCompatActivity implements RecyclerAdapte
     }
 
     public void Confi(View view){
+
+
         Intent de = new Intent(SolicitarPedido.this, ConfirmarPedido2.class);
         startActivity(de);
     }
@@ -46,23 +49,17 @@ public class SolicitarPedido extends AppCompatActivity implements RecyclerAdapte
         rvLista.setLayoutManager(manager);
 
         items = getItems();
-        adapter = new RecyclerAdapter(items, this);
+        adapter = new RecyclerAdapter(items);
         rvLista.setAdapter(adapter);
     }
 
     private List<ItemList> getItems() {
         List<ItemList> itemLists = new ArrayList<>();
-        itemLists.add(new ItemList("Bolillo", "Escribe las piezas a Solicitar", R.drawable.bolillo));
-        itemLists.add(new ItemList("Concha", "Escribe las piezas a Solicitar", R.drawable.concha));
-        itemLists.add(new ItemList("Oreja", "Escribe las piezas a Solicitar", R.drawable.orejas));
-        itemLists.add(new ItemList("Cuernito", "Escribe las piezas a Solicitar", R.drawable.cuernitos));
+        itemLists.add(new ItemList("Bolillo", "Escribe las piezas a Solicitar", "22",R.drawable.bolillo));
+        itemLists.add(new ItemList("Concha", "Escribe las piezas a Solicitar", "43",R.drawable.concha));
+        itemLists.add(new ItemList("Oreja", "Escribe las piezas a Solicitar","34", R.drawable.orejas));
+        itemLists.add(new ItemList("Cuernito", "Escribe las piezas a Solicitar", "12",R.drawable.cuernitos));
         return itemLists;
     }
 
-    @Override
-    public void itemClick(ItemList item) {
-        Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("itemDetail", item);
-        startActivity(intent);
-    }
 }
