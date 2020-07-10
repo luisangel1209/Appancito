@@ -16,16 +16,22 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.File;
 import java.net.URI;
 
 public class SubirImagen extends AppCompatActivity {
-
+    private DatabaseReference DBPanes;
     private final String CARPETA_RAIZ="misImagenesPrueba/";
     private final String RUTA_IMAGEN=CARPETA_RAIZ+"misFotos";
     final int COD_SELECCIONA=10;
@@ -33,18 +39,21 @@ public class SubirImagen extends AppCompatActivity {
 
     ImageView imagen;
     String path;
+    Button guardar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subir_imagen);
-
         imagen = (ImageView)findViewById(R.id.imgcarga);
-
     }
 
     public void onClick(View view){
         cargarImagen();
+    }
+
+    public void onClick2(View view){
+        registrarCompra();
     }
 
     private void cargarImagen() {
@@ -129,4 +138,45 @@ public class SubirImagen extends AppCompatActivity {
         Intent home = new Intent(SubirImagen.this, Principal.class);
         startActivity(home);
     }
+
+    public void registrarCompra(){
+        //Bolillo
+        Bundle datosb = this.getIntent().getExtras();
+        final String numbolillo = datosb.getString("NumeroBolillo");
+        int bolillo = Integer.parseInt(numbolillo);
+        //Concha
+        Bundle datosco = this.getIntent().getExtras();
+        final String numconcha = datosco.getString("NumeroConcha");
+        int concha = Integer.parseInt(numconcha);
+        //Cuerno
+        Bundle datoscu = this.getIntent().getExtras();
+        final String numerocuero = datoscu.getString("NumeroCuerno");
+        int cuerno = Integer.parseInt(numerocuero);
+        //Oreja
+        Bundle datoso = this.getIntent().getExtras();
+        final String numerooreja = datoso.getString("NumeroOreja");
+        int oreja = Integer.parseInt(numerooreja);
+        //Total
+        Bundle totalp = this.getIntent().getExtras();
+        final String totalpagar = totalp.getString("TotalPagar");
+        String total = totalpagar;
+        //Fecha
+        Bundle fecha = this.getIntent().getExtras();
+        final String fech = fecha.getString("Fecha");
+        String fc = fech;
+        //Nombre
+        Bundle nom = this.getIntent().getExtras();
+        final String nombre = nom.getString("Nombre");
+        String nomb = nombre;
+        //Hora
+        Bundle hora = this.getIntent().getExtras();
+        final String hor = hora.getString("Horas");
+        String h = hor;
+        DBPanes = FirebaseDatabase.getInstance().getReference("Compras");
+        String id = DBPanes.push().getKey();
+        Carrito peli = new Carrito(id, bolillo, concha, cuerno, oreja, total, fc, h, nomb);
+        DBPanes.child(id).setValue(peli);
+        Toast.makeText(this, "Compra Realizada", Toast.LENGTH_LONG).show();
+    }
+
 }

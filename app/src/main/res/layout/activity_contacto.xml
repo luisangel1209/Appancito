@@ -119,6 +119,7 @@
         android:id="@+id/imageView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="Mapa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
@@ -138,21 +139,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.894" />
-
-    <Button
-        android:layout_width="186dp"
-        android:layout_height="59dp"
-        android:background="@color/ColorFondo"
-        android:elevation="@dimen/cardview_default_elevation"
-        android:onClick="Mapa"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"
-        tools:text="@string/mapa" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

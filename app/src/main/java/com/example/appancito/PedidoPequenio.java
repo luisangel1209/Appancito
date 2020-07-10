@@ -44,7 +44,6 @@ public class PedidoPequenio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedido_pequenio);
-        recuperarComponentes();
         Bolillo();
         Concha();
         Cuerno();
@@ -63,9 +62,9 @@ public class PedidoPequenio extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
                     for(DataSnapshot panes : dataSnapshot.getChildren()){
-                        String piezas = panes.child("Piezas").getValue().toString();
-                        String precio = panes.child("Precio").getValue().toString();
-                        listasstrbolillo.add(piezas+" / "+precio+" por pieza");
+                        int piezas = panes.child("Piezas").getValue().hashCode();
+                        int precio = panes.child("Precio").getValue().hashCode();
+                        listasstrbolillo.add(piezas+" piezas disponibles      $"+precio+" por pieza");
                         adapterbolillo = new ArrayAdapter<String>(PedidoPequenio.this, android.R.layout.simple_list_item_1, listasstrbolillo);
                         listabolillo.setAdapter(adapterbolillo);
                     }
@@ -91,9 +90,9 @@ public class PedidoPequenio extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
                     for(DataSnapshot panes : dataSnapshot.getChildren()){
-                        String piezas = panes.child("Piezas").getValue().toString();
-                        String precio = panes.child("Precio").getValue().toString();
-                        listasstrconcha.add(piezas+" / "+precio+" por pieza");
+                        int piezas = panes.child("Piezas").getValue().hashCode();
+                        int precio = panes.child("Precio").getValue().hashCode();
+                        listasstrconcha.add(piezas+" piezas disponibles      $"+precio+" por pieza");
                         adapterconcha = new ArrayAdapter<String>(PedidoPequenio.this, android.R.layout.simple_list_item_1, listasstrconcha);
                         listaconcha.setAdapter(adapterconcha);
                     }
@@ -119,9 +118,9 @@ public class PedidoPequenio extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
                     for(DataSnapshot panes : dataSnapshot.getChildren()){
-                        String piezas = panes.child("Piezas").getValue().toString();
-                        String precio = panes.child("Precio").getValue().toString();
-                        listasstrcuerno.add(piezas+" / "+precio+" por pieza");
+                        int piezas = panes.child("Piezas").getValue().hashCode();
+                        int precio = panes.child("Precio").getValue().hashCode();
+                        listasstrcuerno.add(piezas+" piezas disponibles      $"+precio+" por pieza");
                         adaptercuerno = new ArrayAdapter<String>(PedidoPequenio.this, android.R.layout.simple_list_item_1, listasstrcuerno);
                         listacuerno.setAdapter(adaptercuerno);
                     }
@@ -147,9 +146,9 @@ public class PedidoPequenio extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
                     for(DataSnapshot panes : dataSnapshot.getChildren()){
-                        String piezas = panes.child("Piezas").getValue().toString();
-                        String precio = panes.child("Precio").getValue().toString();
-                        listasstroreja.add(piezas+" / "+precio+" por pieza");
+                        int piezas = panes.child("Piezas").getValue().hashCode();
+                        int precio = panes.child("Precio").getValue().hashCode();
+                        listasstroreja.add(piezas+" piezas disponibles      $"+precio+" por pieza");
                         adapteroreja = new ArrayAdapter<String>(PedidoPequenio.this, android.R.layout.simple_list_item_1, listasstroreja);
                         listaoreja.setAdapter(adapteroreja);
                     }
@@ -169,27 +168,15 @@ public class PedidoPequenio extends AppCompatActivity {
     }
 
     public void Confi(View view) {
-        Intent de = new Intent(PedidoPequenio.this, ConfirmarPedido.class);
-        generarCarrito();
-        startActivity(de);
+        Intent intent = new Intent(PedidoPequenio.this, ConfirmarPedido.class);
+        compBolillo = findViewById(R.id.editTextBolillo);
+        compConcha = findViewById(R.id.editTextConcha);
+        compCuerno = findViewById(R.id.editTextCuernos);
+        compOreja = findViewById(R.id.editTextOrejas);
+        intent.putExtra("NumeroBolillo", compBolillo.getText().toString());
+        intent.putExtra("NumeroConcha", compConcha.getText().toString());
+        intent.putExtra("NumeroCuerno", compCuerno.getText().toString());
+        intent.putExtra("NumeroOreja", compOreja.getText().toString());
+        startActivity(intent);
     }
-
-    public void recuperarComponentes() {
-        try {
-            compBolillo = findViewById(R.id.editTextBolillo);
-            compConcha = findViewById(R.id.editTextConcha);
-            compCuerno = findViewById(R.id.editTextCuernos);
-            compOreja = findViewById(R.id.editTextOrejas);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void generarCarrito(){
-        Carrito.bolillos = Integer.parseInt(compBolillo.getText().toString());
-        Carrito.conchas = Integer.parseInt(compConcha.getText().toString());
-        Carrito.cuernos = Integer.parseInt(compCuerno.getText().toString());
-        Carrito.orejas = Integer.parseInt(compOreja.getText().toString());
-    }
-
 }

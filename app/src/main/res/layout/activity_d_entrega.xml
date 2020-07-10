@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DatosEntrega">
+    tools:context=".DEntrega">
 
     <RelativeLayout
         android:id="@+id/Conte"
@@ -22,7 +22,6 @@
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:contentDescription="TODO"
-            android:onClick="Regresar"
             app:srcCompat="@mipmap/regresar" />
 
         <TextView
@@ -44,7 +43,7 @@
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/imageViewc"
         android:layout_width="237dp"
         android:layout_height="197dp"
         android:layout_marginTop="16dp"
@@ -57,20 +56,20 @@
 
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/fechaentrega"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:text="@string/FechaEntrega"
+        android:text="@string/FechaEntregados"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView18"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewc"
+        app:layout_constraintVertical_bias="0.052" />
 
-    <TextView
-        android:id="@+id/fecha"
+    <EditText
+        android:id="@+id/fechaa"
         android:layout_width="217dp"
         android:layout_height="41dp"
         android:layout_marginTop="132dp"
@@ -79,10 +78,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.314"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewc" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/he"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/HoraEntrega"
@@ -90,11 +89,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fecha"
+        app:layout_constraintTop_toBottomOf="@+id/fechaa"
         app:layout_constraintVertical_bias="0.079" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Nombre"
@@ -106,7 +105,7 @@
         app:layout_constraintVertical_bias="0.725" />
 
     <EditText
-        android:id="@+id/TxtNombreDatosEntrega"
+        android:id="@+id/TxtNombreDatosEntregaa"
         android:layout_width="315dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -119,11 +118,11 @@
         app:layout_constraintVertical_bias="0.793" />
 
     <Button
-        android:id="@+id/btnContinuar"
+        android:id="@+id/btnContinuarr"
         android:layout_width="128dp"
         android:layout_height="65dp"
         android:backgroundTint="@color/ColorFondo"
-        android:onClick="FormaPago"
+
         android:text="@string/Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +132,7 @@
         app:layout_constraintVertical_bias="0.927" />
 
     <Spinner
-        android:id="@+id/spHoraEntrega"
+        android:id="@+id/SpinnerEntrega"
         android:layout_width="319dp"
         android:layout_height="34dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -142,6 +141,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.66" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

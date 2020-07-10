@@ -37,7 +37,8 @@
     <string name="cuenta">xxxxxxxxxxxxxxx</string>
     <string name="adjuntarFoto">Adjuntar imagen del deposito</string>
     <string name="Datosentrega">Datos de Entrega</string>
-    <string name="FechaEntrega">Presiona el boton para seleccionar una fecha de entrega</string>
+    <string name="FechaEntrega">Fecha de entrega</string>
+    <string name="FechaEntregados">Fecha de entrega (DD-MM-AAAA)</string>
     <string name="HoraEntrega">Hora de Entrega</string>
     <string name="Continuar">Continuar</string>
     <string name="ConfirmatuPedido">Confirmar pedido</string>
@@ -63,6 +64,8 @@
     <string name="conchas">Conchas</string>
     <string name="cuernos">Cuernos</string>
     <string name="orejas">Orejas</string>
-
+    <string name="Total">Total</string>
+    <string name="TotalA">Total a Pagar</string>
+    <string name="Sel">Por favor selecciona primero la imagen y despues da click en guardar </string>
 
 </resources>

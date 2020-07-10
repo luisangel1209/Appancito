@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".SubirImagen">
 
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/Sel"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Conte">
+
+    </TextView>
+
     <RelativeLayout
         android:id="@+id/Conte"
         android:layout_width="match_parent"
@@ -47,14 +62,11 @@
         android:id="@+id/imgcarga"
         android:layout_width="350dp"
         android:layout_height="455dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginBottom="302dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        android:layout_marginTop="29dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Conte"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
 
     </ImageView>
 
@@ -71,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgcarga"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.538" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -108,10 +120,12 @@
         android:layout_marginTop="35dp"
         android:layout_marginBottom="49dp"
         android:backgroundTint="@color/ColorFondo"
+        android:onClick="onClick2"
         android:text="@string/Guardar"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cargarimg"></Button>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
